@@ -55,14 +55,14 @@
 			opacity: 1;
 		}
 	}
-	button {
+ /* button {
 		display: block;
-	}
- .close-button {
-   border-radius: 50px;
-   float: right;
-   position: relative;
-   top: -15px;
-   right: -15px;
- }
+	  } */
+ /* .close-button {
+    border-radius: 50px;
+    float: right;
+    position: relative;
+    top: -15px;
+    right: -15px;
+    } */
 </style>

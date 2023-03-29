@@ -22,15 +22,17 @@
 
 <div class="gallery">
   {#each images as img}
-    <img class="image" alt="Gallery image" src={img} on:click={() => {
-                                                              showModal = true;
-                                                              currentImage = img;
-                                                              }} />
+    <a href={null} on:click={() => {
+                          showModal = true;
+                          currentImage = img;
+                          }} >
+      <img class="image" alt="Gallery" src={img} />
+    </a>
   {/each}
 </div>
 
 <Modal bind:showModal>
-  <img class="modal-image" src={currentImage} />
+  <img class="modal-image" alt="Modal" src={currentImage} />
 </Modal>
 
 <style>
@@ -39,7 +41,6 @@
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: row;
-    max-height: 100vh;
   }
   .gallery img {
     margin: 10px;
