@@ -22,10 +22,10 @@
 
 <div class="gallery">
   {#each images as img}
-    <img class="image" src={img} on:click={() => {
-                                          showModal = true;
-                                          currentImage = img;
-                                          }} />
+    <img class="image" alt="Gallery image" src={img} on:click={() => {
+                                                              showModal = true;
+                                                              currentImage = img;
+                                                              }} />
   {/each}
 </div>
 
