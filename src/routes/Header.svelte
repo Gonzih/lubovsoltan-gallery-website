@@ -5,7 +5,6 @@
 
 <header>
 	<div class="corner">
-    <img src={logo} alt="Lubov Soltan" />
 	</div>
 
 	<nav>
@@ -16,6 +15,9 @@
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>
+
+      <img class="ls-logo" src={logo} alt="Lubov Soltan" />
+
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
 			</li>
@@ -30,6 +32,11 @@
 </header>
 
 <style>
+  .ls-logo {
+    width: 40px;
+    padding: 10px;
+  }
+
 	header {
 		display: flex;
 		justify-content: space-between;

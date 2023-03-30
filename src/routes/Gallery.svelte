@@ -22,7 +22,7 @@
 
 <div class="gallery">
   {#each images as img}
-    <a href={null} on:click={() => {
+    <a href={`#img`} on:click={() => {
                           showModal = true;
                           currentImage = img;
                           }} >
