@@ -27,7 +27,7 @@
 
 <div class="gallery">
   {#each images as img}
-    <a href={"#img"} on:click={() => {
+    <a href={""} on:click={() => {
                           currentImage = img.src;
                           showModal = true;
                           }} >
