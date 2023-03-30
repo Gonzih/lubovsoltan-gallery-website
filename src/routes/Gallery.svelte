@@ -23,20 +23,24 @@
 
  let currentImage: string | null = null;
  let showModal = false;
+
+ $: if (!showModal) {
+   currentImage = null;
+ }
 </script>
 
 <div class="gallery">
   {#each images as img}
     <a href={""} on:click={() => {
-                          currentImage = img.src;
                           showModal = true;
+                          currentImage = img.src;
                           }} >
       <img class="image" alt="Gallery" src={img.thumb} />
     </a>
   {/each}
 </div>
 
-<Modal bind:showModal on:close={() => alert(1)}>
+<Modal bind:showModal>
   <img class="modal-image" alt="Modal" src={currentImage} />
 </Modal>
 

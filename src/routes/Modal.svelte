@@ -1,6 +1,5 @@
 <script>
 	export let showModal; // boolean
-  export let close = () => {};
 
 	let dialog; // HTMLDialogElement
 
@@ -10,7 +9,7 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <dialog
 	bind:this={dialog}
-	on:close={() => {(showModal = false); close();}}
+	on:close={() => (showModal = false)}
 	on:click|self={() => dialog.close()}
 >
 	<div on:click|stopPropagation>
