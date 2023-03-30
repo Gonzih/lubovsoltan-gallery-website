@@ -50,6 +50,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: row;
+    justify-content: space-between;
   }
   .gallery img {
     margin: 10px;
