@@ -3,8 +3,14 @@
 	<meta name="description" content="About Lubov Soltan" />
 </svelte:head>
 
+<script lang="ts">
+ import bio from '$lib/images/Website/lubov_soltan_bio.jpg';
+</script>
+
 <div class="text-column">
 	<h1>Lubov Soltan</h1>
+
+  <p class="bio-pic"><img src={bio} alt="Lubov Soltan"/></p>
 
 	<p>
     Belarusian-born student of Fine Art, who favours the malleable nature of oil painting. Drawing inspiration from the volatility of the human condition and the varied places she’s called home, Lubov’s subject matter fittingly ranges from the romantic rainy cityscapes of Toronto Old Town to the dark and ethereal inner worlds of the soul.
@@ -18,3 +24,14 @@ After exhibiting in her hometown Lubov became immersed in the world of tech and 
 Now an established Product Designer in Vancouver, Canada, she is keen to rekindle her “artist origin story” and once again explore more tactile mediums.
 	</p>
 </div>
+
+<style>
+ .bio-pic {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .bio-pic img {
+   max-width: 500px;
+ }
+</style>
