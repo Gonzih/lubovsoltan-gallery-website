@@ -3,7 +3,7 @@
  import './styles.css';
  import Fa from 'svelte-fa/src/fa.svelte';
  import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
- import { faInstagram, faTwitter, faLinkedin, faBehance } from '@fortawesome/free-brands-svg-icons';
+ import { faInstagram, faTwitter, faBehance } from '@fortawesome/free-brands-svg-icons';
 </script>
 
 <div class="app">
@@ -16,9 +16,8 @@
 	<footer>
 		<p class="links">
       <a href="mailto:lubovsoltan@gmail.com"><Fa icon={faEnvelope} /></a>
-      <a href="https://www.instagram.com/lubov_soltan/"><Fa icon={faInstagram} /></a>
+      <a href="https://www.instagram.com/artist.lubov/"><Fa icon={faInstagram} /></a>
       <a href="https://twitter.com/Lubov_Soltan"><Fa icon={faTwitter} /></a>
-      <a href="https://www.linkedin.com/in/lubovsoltan/"><Fa icon={faLinkedin} /></a>
       <a href="https://www.behance.net/lubovsoltan"><Fa icon={faBehance} /></a>
     </p>
 	</footer>

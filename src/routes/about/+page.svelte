@@ -7,19 +7,14 @@
 	<h1>Lubov Soltan</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
-
-	<pre>npm create svelte@latest</pre>
+    Belarusian-born student of Fine Art, who favours the malleable nature of oil painting. Drawing inspiration from the volatility of the human condition and the varied places she’s called home, Lubov’s subject matter fittingly ranges from the romantic rainy cityscapes of Toronto Old Town to the dark and ethereal inner worlds of the soul.
+</p>
 
 	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+After exhibiting in her hometown Lubov became immersed in the world of tech and design, a career that drew her first across Europe then to Toronto, and inspired a passion for graphic art along the way.
 	</p>
 
 	<p>
-		using it with JavaScript disabled!
+Now an established Product Designer in Vancouver, Canada, she is keen to rekindle her “artist origin story” and once again explore more tactile mediums.
 	</p>
 </div>
