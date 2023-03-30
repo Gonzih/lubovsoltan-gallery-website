@@ -1,5 +1,7 @@
 <script lang="ts">
  import Modal from './Modal.svelte';
+ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+ import Fa from 'svelte-fa/src/fa.svelte';
  import cb from '$lib/images/Website/lubov_soltan-cluttered-backyard.jpg';
  import cbs from '$lib/images/Website/lubov_soltan-cluttered-backyard-sq1.jpg';
  import envy from '$lib/images/Website/lubov_soltan-envy.jpg';
@@ -18,6 +20,7 @@
  interface Img {
    src: string;
    thumb: string;
+   link?: string;
  }
 
  const images: Img[] = [
@@ -25,16 +28,18 @@
    {src: envy, thumb: envys},
    {src: trees, thumb: treess},
    {src: flock, thumb: flocks},
-   {src: ancestral, thumb: ancestrals},
-   {src: bratislava, thumb: bratislavas},
-   {src: cat, thumb: cats},
+   {src: ancestral, thumb: ancestrals, link: "https://www.thegallerygeorge.com/product-page/ancestral-forest"},
+   {src: bratislava, thumb: bratislavas, link: "https://www.thegallerygeorge.com/product-page/bratislava"},
+   {src: cat, thumb: cats, link: "https://www.thegallerygeorge.com/product-page/cat"},
  ];
 
  let currentImage: string | null = null;
+ let currentStoreLink: string | null = null;
  let showModal = false;
 
  $: if (!showModal) {
    currentImage = null;
+   currentStoreLink = null;
  }
 </script>
 
@@ -43,6 +48,7 @@
     <a href={""} on:click={() => {
                           showModal = true;
                           currentImage = img.src;
+                          currentStoreLink = img.link ?? null;
                           }} >
       <img class="image" alt="Gallery" src={img.thumb} />
     </a>
@@ -51,6 +57,11 @@
 
 <Modal bind:showModal>
   <img class="modal-image" alt="Modal" src={currentImage} />
+  {#if currentStoreLink}
+    <p class="call-to-action">
+      <a target="_blank" href={currentStoreLink} alt="Buy now"><Fa icon={faShoppingCart} />  Buy now</a>
+    </p>
+  {/if}
 </Modal>
 
 <style>
@@ -66,6 +77,11 @@
     max-width: 20vw;
   }
  .modal-image {
-   max-height: 90vh;
+   max-height: 82vh;
+ }
+ .call-to-action {
+   display: flex;
+   align-items: center;
+   justify-content: center;
  }
 </style>
