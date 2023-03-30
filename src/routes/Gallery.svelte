@@ -1,19 +1,24 @@
 <script lang="ts">
  import Modal from './Modal.svelte';
+ import cb from '$lib/images/Website/lubov_soltan-cluttered-backyard.jpg';
+ import cbs from '$lib/images/Website/lubov_soltan-cluttered-backyard-sq1.jpg';
+ import envy from '$lib/images/Website/lubov_soltan-envy.jpg';
+ import envys from '$lib/images/Website/lubov_soltan-envy-sq1.jpg';
+ import trees from '$lib/images/Website/lubov_soltan-eyes-of-the-trees.jpg';
+ import treess from '$lib/images/Website/lubov_soltan-eyes-of-the-trees-sq1.jpg';
+ import flock from '$lib/images/Website/lubov_soltan-flock-leader.jpg';
+ import flocks from '$lib/images/Website/lubov_soltan-flock-leader-sq1.jpg';
 
- const images: string[] = [
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
-   "https://picsum.photos/id/1/3000/4000",
+ interface Img {
+   src: string;
+   thumb: string;
+ }
+
+ const images: Img[] = [
+   {src: cb, thumb: cbs},
+   {src: envy, thumb: envys},
+   {src: trees, thumb: treess},
+   {src: flock, thumb: flocks},
  ];
 
  let currentImage: string | null = null;
@@ -22,11 +27,11 @@
 
 <div class="gallery">
   {#each images as img}
-    <a href={`#img`} on:click={() => {
+    <a href={`#img.src`} on:click={() => {
+                          currentImage = img.src;
                           showModal = true;
-                          currentImage = img;
                           }} >
-      <img class="image" alt="Gallery" src={img} />
+      <img class="image" alt="Gallery" src={img.thumb} />
     </a>
   {/each}
 </div>
@@ -47,6 +52,6 @@
     max-width: 20vw;
   }
  .modal-image {
-   max-width: 100%;
+   max-height: 90vh;
  }
 </style>
