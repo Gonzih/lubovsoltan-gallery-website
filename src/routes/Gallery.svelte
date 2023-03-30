@@ -27,7 +27,7 @@
 
 <div class="gallery">
   {#each images as img}
-    <a href={`#img.src`} on:click={() => {
+    <a href={"#img"} on:click={() => {
                           currentImage = img.src;
                           showModal = true;
                           }} >
@@ -36,7 +36,7 @@
   {/each}
 </div>
 
-<Modal bind:showModal>
+<Modal bind:showModal on:close={() => alert(1)}>
   <img class="modal-image" alt="Modal" src={currentImage} />
 </Modal>
 
