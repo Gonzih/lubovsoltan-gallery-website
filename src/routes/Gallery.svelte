@@ -8,6 +8,12 @@
  import treess from '$lib/images/Website/lubov_soltan-eyes-of-the-trees-sq1.jpg';
  import flock from '$lib/images/Website/lubov_soltan-flock-leader.jpg';
  import flocks from '$lib/images/Website/lubov_soltan-flock-leader-sq1.jpg';
+ import ancestral from '$lib/images/Website/lubov_soltan-ancestral-forest.jpg';
+ import ancestrals from '$lib/images/Website/lubov_soltan-ancestral-forest-sq1.jpg';
+ import bratislava from '$lib/images/Website/lubov_soltan-bratislava.jpg';
+ import bratislavas from '$lib/images/Website/lubov_soltan-bratislava-sq1.jpg';
+ import cat from '$lib/images/Website/lubov_soltan-cat.jpg';
+ import cats from '$lib/images/Website/lubov_soltan-cat-sq1.jpg';
 
  interface Img {
    src: string;
@@ -19,6 +25,9 @@
    {src: envy, thumb: envys},
    {src: trees, thumb: treess},
    {src: flock, thumb: flocks},
+   {src: ancestral, thumb: ancestrals},
+   {src: bratislava, thumb: bratislavas},
+   {src: cat, thumb: cats},
  ];
 
  let currentImage: string | null = null;
