@@ -4,11 +4,10 @@
  import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
  import Fa from 'svelte-fa/src/fa.svelte';
 
- // import from '$lib/images/Website/lubov_soltan-alien-landscape.jpg'
-
  interface Img {
    src: string;
    thumb: string;
+   alt: string;
    link?: string;
  }
 
@@ -16,6 +15,7 @@
    return {
      src: `Website/lubov_soltan-${name}.jpg`,
      thumb: `Website/lubov_soltan-${name}-sq1.jpg`,
+     alt: `Artwork ${name}`,
      link,
    };
  }
@@ -36,7 +36,7 @@
    img("toronto-after-rain", "https://www.thegallerygeorge.com/product-page/toronto-after-rain"),
    img("toronto-shore", "https://www.thegallerygeorge.com/product-page/toronto-shore"),
    img("abstract-green"),
-   // img("alien-landscape"),
+   img("alien-landscape"),
    img("art-deco-man"),
    img("head-above-water"),
    img("head-in-the-wall"),
@@ -51,6 +51,7 @@
  ];
 
  let currentImage: string | null = null;
+ let currentAlt: string | null = null;
  let currentStoreLink: string | null = null;
  let showModal = false;
 
@@ -65,15 +66,16 @@
     <a href={"#"} on:click|preventDefault={() => {
                           showModal = true;
                           currentImage = img.src;
+                          currentAlt = img.alt;
                           currentStoreLink = img.link ?? null;
                           }} >
-      <img class="image" alt="Gallery" src={img.thumb} />
+      <img class="image" alt={img.alt} src={img.thumb} />
     </a>
   {/each}
 </div>
 
 <Modal bind:showModal>
-  <img class="modal-image" alt="Modal" src={currentImage} />
+  <img class="modal-image" alt={`Viewing ${currentAlt}`} src={currentImage} />
   {#if currentStoreLink}
     <p class="call-to-action">
       <a target="_blank" href={currentStoreLink} alt="Buy now"><Fa icon={faShoppingCart} />  Buy now</a>
