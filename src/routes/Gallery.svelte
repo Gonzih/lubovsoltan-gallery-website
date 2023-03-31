@@ -93,33 +93,24 @@
   }
   .gallery img {
     margin: 10px;
-    max-width: 20vw;
+    width: 100%;
   }
 
 	@media (min-width: 1024px) {
-    .gallery img {
-      width: 12vw;
+    .gallery a {
+      width: 25%;
     }
 	}
 
-	@media (max-width: 720px) {
-    .gallery img {
-      max-width: 40vw;
-      min-width: 40vw;
-    }
-	}
-
-	@media (min-width: 720px) and (max-width: 1024px) {
-    .gallery img {
-      max-width: 28vw;
-      min-width: 28vw;
+	@media (min-width: 480px) {
+    .gallery a {
+      width: 30%;
     }
 	}
 
 	@media (max-width: 480px) {
-    .gallery img {
-      max-width: 90vw;
-      min-width: 90vw;
+    .gallery a {
+      width: 90%;
     }
 	}
 
