@@ -94,6 +94,12 @@
     max-width: 20vw;
   }
 
+	@media (min-width: 1024px) {
+    .gallery img {
+      width: 12vw;
+    }
+	}
+
 	@media (max-width: 720px) {
     .gallery img {
       max-width: 40vw;
