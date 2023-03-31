@@ -50,12 +50,12 @@
    {src: bratislava, thumb: bratislavas, link: "https://www.thegallerygeorge.com/product-page/bratislava"},
    {src: cat, thumb: cats, link: "https://www.thegallerygeorge.com/product-page/cat"},
    {src: fullmoon, thumb: fullmoons},
-   {src: house, thumb: houses},
-   {src: forest, thumb: forests},
-   {src: perfectday, thumb: perfectdays},
-   {src: rainystreet, thumb: rainystreets},
-   {src: torontorain, thumb: torontorains},
-   {src: torontoshore, thumb: torontoshores},
+   {src: house, thumb: houses, link: "https://www.thegallerygeorge.com/product-page/house-on-the-water"},
+   {src: forest, thumb: forests, link: "https://www.thegallerygeorge.com/product-page/night-forest"},
+   {src: perfectday, thumb: perfectdays, link: "https://www.thegallerygeorge.com/product-page/perfect-day"},
+   {src: rainystreet, thumb: rainystreets, link: "https://www.thegallerygeorge.com/product-page/rainy-street"},
+   {src: torontorain, thumb: torontorains, link: "https://www.thegallerygeorge.com/product-page/toronto-after-rain"},
+   {src: torontoshore, thumb: torontoshores, link: "https://www.thegallerygeorge.com/product-page/toronto-shore"},
  ];
 
  let currentImage: string | null = null;
