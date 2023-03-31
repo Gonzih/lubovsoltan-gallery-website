@@ -78,7 +78,7 @@
   <img class="modal-image" alt={`Viewing ${currentAlt}`} src={currentImage} />
   {#if currentStoreLink}
     <p class="call-to-action">
-      <a target="_blank" href={currentStoreLink} alt="Buy now"><Fa icon={faShoppingCart} />  Buy now</a>
+      <a target="_blank" href={currentStoreLink} alt={`Buy ${currentAlt} now`}><Fa icon={faShoppingCart} />  Buy now</a>
     </p>
   {/if}
 </Modal>
