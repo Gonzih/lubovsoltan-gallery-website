@@ -97,18 +97,21 @@
 	@media (max-width: 720px) {
     .gallery img {
       max-width: 40vw;
+      min-width: 40vw;
     }
 	}
 
 	@media (min-width: 720px) and (max-width: 1024px) {
     .gallery img {
       max-width: 28vw;
+      min-width: 28vw;
     }
 	}
 
 	@media (max-width: 480px) {
     .gallery img {
       max-width: 90vw;
+      min-width: 90vw;
     }
 	}
 
