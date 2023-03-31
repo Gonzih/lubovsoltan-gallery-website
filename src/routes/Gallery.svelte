@@ -101,6 +101,25 @@
     margin: 10px;
     max-width: 20vw;
   }
+
+	@media (max-width: 720px) {
+    .gallery img {
+      max-width: 40vw;
+    }
+	}
+
+	@media (min-width: 720px) and (max-width: 1024px) {
+    .gallery img {
+      max-width: 28vw;
+    }
+	}
+
+	@media (max-width: 480px) {
+    .gallery img {
+      max-width: 90vw;
+    }
+	}
+
  .modal-image {
    max-height: 82vh;
  }
