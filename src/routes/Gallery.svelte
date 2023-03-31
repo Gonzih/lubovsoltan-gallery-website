@@ -1,7 +1,9 @@
 <script lang="ts">
+ import { onMount } from 'svelte';
  import Modal from './Modal.svelte';
  import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
  import Fa from 'svelte-fa/src/fa.svelte';
+
  import cb from '$lib/images/Website/lubov_soltan-cluttered-backyard.jpg';
  import cbs from '$lib/images/Website/lubov_soltan-cluttered-backyard-sq1.jpg';
  import envy from '$lib/images/Website/lubov_soltan-envy.jpg';
@@ -16,6 +18,22 @@
  import bratislavas from '$lib/images/Website/lubov_soltan-bratislava-sq1.jpg';
  import cat from '$lib/images/Website/lubov_soltan-cat.jpg';
  import cats from '$lib/images/Website/lubov_soltan-cat-sq1.jpg';
+ import fullmoon from '$lib/images/Website/lubov_soltan-full-moon.jpg';
+ import fullmoons from '$lib/images/Website/lubov_soltan-full-moon-sq1.jpg';
+ import houses from '$lib/images/Website/lubov_soltan-house-on-the-water-sq1.jpg'
+ import house from '$lib/images/Website/lubov_soltan-house-on-the-water.jpg'
+ import forests from '$lib/images/Website/lubov_soltan-night-forest-sq1.jpg'
+ import forest from '$lib/images/Website/lubov_soltan-night-forest.jpg'
+ import perfectday from '$lib/images/Website/lubov_soltan-perfect-day.jpg'
+ import perfectdays from '$lib/images/Website/lubov_soltan-perfect-day-sq1.jpg'
+ import rainystreets from '$lib/images/Website/lubov_soltan-rainy-street-sq1.jpg'
+ import rainystreet from '$lib/images/Website/lubov_soltan-rainy-street.jpg'
+ import torontorains from '$lib/images/Website/lubov_soltan-toronto-after-rain-sq1.jpg'
+ import torontorain from '$lib/images/Website/lubov_soltan-toronto-after-rain.jpg'
+ import torontoshores from '$lib/images/Website/lubov_soltan-toronto-shore-sq1.jpg'
+ import torontoshore from '$lib/images/Website/lubov_soltan-toronto-shore.jpg'
+
+ // import from '$lib/images/Website/lubov_soltan-snake.jpg'
 
  interface Img {
    src: string;
@@ -31,6 +49,13 @@
    {src: ancestral, thumb: ancestrals, link: "https://www.thegallerygeorge.com/product-page/ancestral-forest"},
    {src: bratislava, thumb: bratislavas, link: "https://www.thegallerygeorge.com/product-page/bratislava"},
    {src: cat, thumb: cats, link: "https://www.thegallerygeorge.com/product-page/cat"},
+   {src: fullmoon, thumb: fullmoons},
+   {src: house, thumb: houses},
+   {src: forest, thumb: forests},
+   {src: perfectday, thumb: perfectdays},
+   {src: rainystreet, thumb: rainystreets},
+   {src: torontorain, thumb: torontorains},
+   {src: torontoshore, thumb: torontoshores},
  ];
 
  let currentImage: string | null = null;
