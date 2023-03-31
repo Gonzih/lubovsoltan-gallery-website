@@ -70,7 +70,7 @@
 
 <div class="gallery">
   {#each images as img}
-    <a href={""} on:click={() => {
+    <a href={"#"} on:click|preventDefault={() => {
                           showModal = true;
                           currentImage = img.src;
                           currentStoreLink = img.link ?? null;
