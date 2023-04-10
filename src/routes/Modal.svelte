@@ -55,10 +55,10 @@
 			opacity: 1;
 		}
 	}
- /* button {
+	/* button {
 		display: block;
 	  } */
- /* .close-button {
+	/* .close-button {
     border-radius: 50px;
     float: right;
     position: relative;

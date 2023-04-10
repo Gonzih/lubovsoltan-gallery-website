@@ -1,9 +1,9 @@
 <script>
- import Header from './Header.svelte';
- import './styles.css';
- import Fa from 'svelte-fa/src/fa.svelte';
- import { faEnvelope, faStore } from '@fortawesome/free-solid-svg-icons';
- import { faInstagram, faTwitter, faBehance } from '@fortawesome/free-brands-svg-icons';
+	import Header from './Header.svelte';
+	import './styles.css';
+	import Fa from 'svelte-fa/src/fa.svelte';
+	import { faEnvelope, faStore } from '@fortawesome/free-solid-svg-icons';
+	import { faInstagram, faTwitter, faBehance } from '@fortawesome/free-brands-svg-icons';
 </script>
 
 <div class="app">
@@ -15,20 +15,23 @@
 
 	<footer>
 		<p class="links">
-      <a href="mailto:lubovsoltan@gmail.com"><Fa icon={faEnvelope} /></a>
-      <a target="_blank" href="https://www.instagram.com/artist.lubov/"><Fa icon={faInstagram} /></a>
-      <a target="_blank" href="https://twitter.com/Lubov_Soltan"><Fa icon={faTwitter} /></a>
-      <a target="_blank" href="https://www.behance.net/lubovsoltan"><Fa icon={faBehance} /></a>
-      <a target="_blank" href="https://www.thegallerygeorge.com/lubov-soltan"><Fa icon={faStore} /></a>
-    </p>
+			<a href="mailto:lubovsoltan@gmail.com"><Fa icon={faEnvelope} /></a>
+			<a target="_blank" href="https://www.instagram.com/artist.lubov/"><Fa icon={faInstagram} /></a
+			>
+			<a target="_blank" href="https://twitter.com/Lubov_Soltan"><Fa icon={faTwitter} /></a>
+			<a target="_blank" href="https://www.behance.net/lubovsoltan"><Fa icon={faBehance} /></a>
+			<a target="_blank" href="https://www.thegallerygeorge.com/lubov-soltan"
+				><Fa icon={faStore} /></a
+			>
+		</p>
 	</footer>
 </div>
 
 <style>
- .links a {
-   padding: 8px;
-   font-size: 25px;
- }
+	.links a {
+		padding: 8px;
+		font-size: 25px;
+	}
 
 	.app {
 		display: flex;

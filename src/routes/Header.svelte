@@ -4,8 +4,7 @@
 </script>
 
 <header>
-	<div class="corner">
-	</div>
+	<div class="corner" />
 
 	<nav>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -16,7 +15,7 @@
 				<a href="/">Home</a>
 			</li>
 
-      <img class="ls-logo" src={logo} alt="Lubov Soltan" />
+			<img class="ls-logo" src={logo} alt="Lubov Soltan" />
 
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
@@ -27,15 +26,14 @@
 		</svg>
 	</nav>
 
-	<div class="corner">
-	</div>
+	<div class="corner" />
 </header>
 
 <style>
-  .ls-logo {
-    width: 40px;
-    padding: 10px;
-  }
+	.ls-logo {
+		width: 40px;
+		padding: 10px;
+	}
 
 	header {
 		display: flex;
@@ -43,7 +41,7 @@
 	}
 
 	.corner {
-    padding: 1em;
+		padding: 1em;
 		width: 3em;
 		height: 3em;
 	}
